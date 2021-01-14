@@ -1,26 +1,19 @@
 import "./App.css";
+import "./Components/Footer.css"
+import Footer from "./Components/Footer";
+import Navbar from "./Components/Navbar"
 
-function App() {
+export const App = () => {
   return (
-    <div class="navbar">
-      <div class="container flex">
-        <h1 class="logo">Bulb On</h1>
-        <nav>
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="features.html">Tour</a>
-            </li>
-            <li>
-              <a href="docs.html">Team</a>
-            </li>
-          </ul>
-        </nav>
+    <div className="App">
+      <div className="page-container">
+        <div className="content-wrap">
+          <Navbar />
+        </div>
+        <div>
+          <Footer />
+        </div>
       </div>
     </div>
   );
 }
-
-export default App;
